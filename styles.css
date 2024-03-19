@@ -10,6 +10,7 @@
     --cor-quaternaria: #0D0D0D;
     --cor--quinternaria: #343A40;
     --cor--resul: #A67246;
+    --cor--sexta: #495057;
 
     --font--primaria: "Raleway", sans-serif;
     --font--secundaria: 'Dune Rise', sans-serif;
@@ -51,14 +52,16 @@ main{
     height: 90%;
     display: flex;
     justify-content: space-between;
+    
 }
 .caixadetexto{
     position: absolute;
-    left: 200px;
-    top: 100px;
+    left: 10%;
+    top: 20%;
     padding-left: 100px;
-    width: 1080px;
-    height: 600px;
+    width: 50%;
+    height: 80%;
+    
 }
 .texto{
     width: 80%;
@@ -120,7 +123,7 @@ main{
 .segundasection{
     display: block;
     position: relative;
-    width: 400px;
+    width: 25%;
     height: 840px;
     right: 200px;
     padding-right: 20px;
@@ -130,6 +133,8 @@ main{
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
     margin-bottom: 20px;
     z-index: 0;
+    top: 20%;
+
 }
 .segundasection__conteudo{
     position: absolute;
@@ -144,7 +149,7 @@ main{
     gap: 10px;
     font-family: var(--font--secundaria);
     text-align: center;
-    color: #343A40;
+    color: var(--cor--quinternaria);
     margin-top: 20px;
 
 }
@@ -153,7 +158,7 @@ main{
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: #495057;
+    color: var(--cor--sexta);
     padding-top: 20px;
 }
 .contener-resultado{
@@ -168,6 +173,7 @@ main{
 .contener-resultado p{
     color: var(--cor--resul);
     font-size: 25px;
+    
 
 }
 .texto-resultado{
@@ -182,19 +188,19 @@ main{
     padding-left: 40px;
 }
 .botaocopiar{
-    width: 328px;
+    width: 364px;
     height: 67px;
     border-radius: 24px;
     background-color: var(--cor-terciaria);
     color: var(--cor--secundaria);
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font--secundaria);
     border: 1px solid var(--cor--secundaria);
     cursor: pointer;
     position: relative;
-    top: 50px;
-    right: 4px;
+    top: 40%;
+    right: 10%;
 }
 .ocultar{
     display: none;
@@ -202,20 +208,24 @@ main{
 .rodape{
     position: fixed;
     bottom: 0;
-    left: 300px;
+    left: 0;
     width: 100%;
     color: var(--cor-terciaria);
     background-color: var(--cor--primaria);
     text-align: center;
     padding: 25px 0px;
     font-family: var(--font--secundaria);
-    z-index: 0;
+    z-index: -1;
 }
-@media (max-width: 1758px){
+@media (max-width: 1020px){
     body {
         display: flex;
         flex-flow: row;
         justify-content: center;
-        gap: 3.6rem;
+        
+    }
+    .apresentacao{
+        flex-direction: column;
+        padding: 5%;
     }
 }
