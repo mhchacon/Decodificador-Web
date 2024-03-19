@@ -8,13 +8,13 @@ butoes__main__cod.addEventListener("click", codificar);
 butoes__main__descod.addEventListener("click", decodificar);
 
 function codificar() {
-    ocultarAdelante();
+    ocultarBoneco();
     var caixadetexto = recuperarTexto();
     resultado.textContent = encriptarTexto(caixadetexto); 
 }
 
 function decodificar() {
-    ocultarAdelante();
+    ocultarBoneco();
     var caixadetexto = recuperarTexto();
     resultado.textContent = desencriptarTexto(caixadetexto); 
 }
@@ -24,7 +24,7 @@ function recuperarTexto(){
     return caixadetexto.value;
 }
 
-function ocultarAdelante(){
+function ocultarBoneco(){
     boneco.classList.add("ocultar");
     conteudo.classList.add("ocultar");
 }
