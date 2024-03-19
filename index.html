@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Decodificador CodeQuest</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./imagens/logo_cq.png" alt="logo codequest">
+        CodeQuest
+        
+    </header>
+    <main>
+        <section>
+            <div class="caixadetexto">
+                <textarea placeholder="insira seu texto aqui" class="texto"></textarea>
+            </div>
+            <div class="alerta">
+                <img src="./imagens/warning.svg" alt="foto de alerta">
+                <p>Digite apenas letras minusculas e sem acentos</p>
+            </div>
+
+        </section>
+        <div class="butoes">
+            <button class="butoes__main__cod" type="button">
+                <img src="./imagens/encrypt.svg" alt="cadeado fechado">
+                CODIFICAR</button>
+            <button class="butoes__main__descod" type="button">
+                <img src="./imagens/descrypt.svg" alt="cadeado aberto">
+                DECODIFICAR</button>
+        </div>
+        <section class="segundasection">
+            <div class="segundasection__conteudo">
+                <img src="/imagens/boneco.svg" alt="ilustração boneco">
+
+            </div>
+            <div class="segundasection__conteudo__paragrafo">
+                <h3> Nenhuma mensagem foi <br> encontrada</h3>
+                <p>Insira o texto que deseja codificar</p>
+            </div>
+            <div class="segundasection__conteudo__copia">
+                <input type="button" class="botaocopiar" value="copiar">
+            </div>
+            <div class="contener-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="rodape">
+        <p>desenvolvido por Mariana Chacon</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
