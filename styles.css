@@ -86,6 +86,7 @@ main{
     left: 370px;
     display: flex;
     color: var(--cor-terciaria);
+    gap: 5%;
 }
 .butoes{
     position: absolute;
@@ -101,7 +102,7 @@ main{
     height: 4.18rem;
     border-radius: 24px;
     background-color: var(--cor-terciaria);
-    color: var(--cor--secundaria);
+    color: var(--cor-quaternaria);
     font-size: 1rem;
     font-weight: 400;
     font-family: var(--font--secundaria);
@@ -114,7 +115,7 @@ main{
     height: 4.18rem;
     border-radius: 24px;
     background-color: var(--cor-terciaria);
-    color: var(--cor--secundaria);
+    color: var(--cor-quaternaria);
     font-size: 1rem;
     font-weight: 400;
     font-family: var(--font--secundaria);
